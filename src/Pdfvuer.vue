@@ -17,9 +17,9 @@
     PDFLinkService,
     PDFPageView,
     EventBus
-  } from 'pdfjs-dist/web/pdf_viewer.js';
+  } from 'pdfjs-dist/build/pdf';
   import resizeSensor from './resize.vue'
-  import PdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry'
+  // import PdfjsWorker from 'pdfjs-dist/build/pdf'
   function isPDFDocumentLoadingTask(obj) {
     return typeof (obj) === 'object' && obj !== null && obj.__PDFDocumentLoadingTask === true;
   }
